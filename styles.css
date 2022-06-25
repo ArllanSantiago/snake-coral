@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.container .main{
+    height: 100vh;
+}
+.container .menu{
+    justify-content: start;
+    min-height: 300px; 
+    background-color: #ccc;
+    border-radius: 5%;
+}
+ 
+.title{
+    font-size: 4.5rem;
+    font-family: Cambria;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+
+.score, .record , .teclas{
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+#current-score, #current-record{
+    font-size: 5rem;
+    background-color: rgb(224, 66, 66);
+    color: white;
+    border-radius: 45%;
+    padding: 5%;
+}
+
+.teclas{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li{
+   padding: 0 2% 5% 0 ;  
+   list-style-type: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.snake{
+  border-width: 30px;
+  border-style: solid;
+  border-radius: 5%;
+}
+
+#btnStart{
+    position: absolute;
+    padding: 10px;
+    font-size: 3rem;
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#btnStart:hover{
+    opacity: 0.7;
+}

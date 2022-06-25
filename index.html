@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./js/snake.js"></script>
+    <title>Snake</title>
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container main">
+        <div class="row">
+            <div class="container menu">
+                <div class="title">Controles</div>
+                <ul>
+                    <li>
+                        <div class="container">
+                            <i class="fa fa-arrow-up fa-3x"></i>
+                            <div class="row">
+                                <i class="fa fa-arrow-left fa-3x"></i>
+                                <i class="fa fa-arrow-down fa-3x"></i>
+                                <i class="fa fa-arrow-right fa-3x"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container">
+                            <p class="teclas">W</p>
+                            <div class="row">
+                                <p class="teclas">A</p>
+                                <p class="teclas">S</p>
+                                <p class="teclas">D</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="container">
+                <a role="button" onclick="gameStart()" id="btnStart">Start Game!</a>
+                <div class="title">SNAKE</div>
+                <div class="snake">
+                    <canvas id="snake" width="768" height="768"></canvas>
+                </div>
+            </div>
+            <div class="container menu">
+                <div class="title">Infomations</div>
+                <ul>
+                    <li>
+                        <p class="score">SCORE</p>
+                        <strong id="current-score">00</strong>
+                    </li>
+                    <li>
+                        <p class="record">RECORD</p>
+                        <strong id="current-record">00</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
