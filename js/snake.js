@@ -80,14 +80,11 @@ function posicionHandler(){
             if( gameInformations.score > gameInformations.record){
                 gameInformations.record =  gameInformations.score;
                 localStorage.setItem('current-record',gameInformations.record )
-                alert(`Congratulations. NEW RECORD [${gameInformations.record}]. KEEP PLAYING =)` );
+                alert(`Congratulations. NEW RECORD [${gameInformations.record}]. KEEP PLAYING` );
                 document.getElementById('current-record').innerHTML = gameInformations.record;
             }else{
-                alert("END GAME. TRY AGAIN! ");
+                alert("END GAME. TRY AGAIN!");
             }
-           
-       
-            
             document.getElementById('btnStart').hidden = false;
         }
     })
